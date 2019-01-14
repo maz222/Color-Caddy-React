@@ -1,0 +1,41 @@
+#mainMenu {
+	height: calc(100vh - 200px);
+	width: 75%;
+	min-width: 75%;
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(60,60,60);
+	position: fixed;
+}
+
+#mainMenu button {
+	font-size: 1.5em;
+	margin-left: 5%;
+	width: calc(100% - 5%);
+	text-align: left;
+	outline: none;
+	border: none;
+	background-color: rgba(0,0,0,0);
+}
+
+#editorButton {
+	color: #2196f3;
+
+}
+
+.schemeButton {
+	color: white;
+}
+
+#mainMenu hr {
+	width: 90%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid rgb(40,40,40);
+    margin: 1em 0;
+    padding: 0; 
+}

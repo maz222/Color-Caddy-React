@@ -1,0 +1,13 @@
+.colorBlock {
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.colorBlock:hover {
+	background-color: black;
+	color: red;
+	cursor: pointer;
+}

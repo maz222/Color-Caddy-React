@@ -1,0 +1,62 @@
+html {
+	margin:0;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(20,20,20);
+}
+
+#root {
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	width: 100%;
+	height: calc(10% - 1px);
+	display: flex;
+	align-items: center;
+	background-color: rgb(15,15,15);
+	border-bottom: 1px solid black;
+	margin: 0;
+}
+
+#page {
+	height: 87%;
+}
+
+#mainContent {
+	margin: 30px;
+	width: 90%;
+}
+
+header > h1 {
+	color: white;
+	text-indent: 1em;
+}
+
+#modelSelect {
+	margin-left: 50%;
+	padding: 10px;
+}
+
+#modelSelect > option {
+	background-color: red;
+}
+
+#footer {
+	height: calc(3% - 1px);
+	background-color: rgb(15,15,15);
+	color: white;
+	border-top: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#footer p {
+	margin:0 2.5% 0 0;
+}

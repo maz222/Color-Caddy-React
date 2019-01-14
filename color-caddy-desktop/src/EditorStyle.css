@@ -1,0 +1,127 @@
+#colorEditor {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+}
+
+#colorDisplay {
+	width: 25%;
+	height: calc(100% - 1px);
+	background-color: rgb(80,80,100);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-right: 1px solid rgba(0,0,0,.75);
+}
+
+#colorDisplay > .colorBlock {
+	margin: 20px 20px 10px 20px;
+	height: calc(70% - 50px);
+	flex-grow: 0;
+	width: calc(100% - 60px);
+	border: 1px solid black;
+}
+
+#hexContainer {
+	margin: 0px 20px 20px 20px;
+	height: calc(30% - 20px);
+	width: calc(100% - 40px);
+	display: flex;
+	align-items: center;
+}
+
+#hexContainer > label {
+	color: white;
+	font-weight: bold;
+	width: 25%;
+	text-align: center;
+}
+
+#hexField {
+	width: calc(75% - 10px);
+	padding: 10px;
+	text-align: center;
+	outline: none;
+	border: 2px solid black;
+}
+
+.editor {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sliderContainer {
+	margin: 10px;
+	width: calc(100% - 20px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sliderContainer > label {
+	color: white;
+	font-weight: bold;
+	width: 8%;
+}
+
+.slider {
+	width: 75%;
+	-webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: black; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.sliderField {
+	width: 10%;
+	padding: 10px;
+	margin-right: 10px;
+	text-align: center;
+	outline: none;
+	border: 2px solid black;
+}
+
+#redSlider {
+	background: red;
+}
+
+#greenSlider {
+	background: green;
+}
+
+#blueSlider {
+	background: blue;
+}

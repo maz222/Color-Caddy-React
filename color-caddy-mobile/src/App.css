@@ -1,0 +1,56 @@
+/* general page stuff */
+body {
+    background-color: rgb(220,220,220); 
+}
+
+#root, #app {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+#mainContent {
+    width: 90%;
+    margin-left: 5%;
+    min-width: 90%;
+    height: 100vh;
+}
+
+/* header / banner */
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: calc(15vh - 60px);
+}
+
+#header h1 {
+    flex-grow: 1;
+    height: 50px;
+    background-color: rgb(120,120,120);
+    padding: 15px 8%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+#header button {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(60,60,60);
+    color: white;
+    border: 0;
+    outline: none;
+    margin-right: 10%;
+    border-radius: 10px;
+    font-size: 3em;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+#contentContainer {
+    height: 85vh;
+}
